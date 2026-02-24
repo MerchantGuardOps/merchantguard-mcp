@@ -1,0 +1,51 @@
+{
+  "name": "@merchantguard/mcp-server",
+  "version": "1.0.0",
+  "description": "MerchantGuard MCP Server — AI-native fraud scoring and risk intelligence for agentic commerce",
+  "main": "dist/server-http.js",
+  "types": "dist/server-http.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server-http.js",
+    "start:stdio": "node dist/server-stdio.js",
+    "dev": "tsx src/server-http.ts",
+    "dev:stdio": "tsx src/server-stdio.ts",
+    "test": "jest",
+    "lint": "eslint src/"
+  },
+  "keywords": [
+    "merchantguard",
+    "mcp",
+    "model-context-protocol",
+    "fraud-detection",
+    "guardscore",
+    "agentic-commerce",
+    "risk-scoring",
+    "chargeback-prevention",
+    "vamp",
+    "payment-security",
+    "ai-agents"
+  ],
+  "author": "MerchantGuard <ops@merchantguard.ai>",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "express": "^4.21.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MerchantGuardOps/merchantguard-mcp"
+  }
+}
