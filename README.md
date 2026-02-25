@@ -24,7 +24,7 @@ AI Agent
 |------|----------|-------------|
 | `guardscore_transaction_risk` | Scoring | Score any transaction for fraud risk (0-100) before payment. Supports card, stablecoin, crypto, ACH, wire. |
 | `guardscore_merchant_lookup` | Scoring | Look up a merchant's GuardScore, verification status, chargeback rate, and VAMP standing. |
-| `guardscore_agent_verify` | Scoring | Verify an AI agent's trustworthiness and authorization level. The "3DS for AI agents." |
+| `guardscore_agent_verify` | Scoring | Privacy-preserving agent verification via OPRF (RFC 9497). Agents prove trustworthiness without exposing internals. The "3DS for AI agents." |
 | `guardscore_dispute_predict` | Monitoring | Predict chargeback probability and recommended preventive actions. |
 | `guardscore_velocity_check` | Monitoring | Detect anomalous transaction velocity for merchants, agents, cards, or wallets. |
 | `guardscore_cross_rail_check` | Compliance | Analyze activity across multiple payment rails to detect cross-rail fraud. |
@@ -156,11 +156,13 @@ src/
 
 ## About MerchantGuard
 
-[MerchantGuard](https://merchantguard.ai) is the AI-native fraud scoring platform for high-risk and agentic commerce. Our patented cross-rail fraud detection technology scores transactions across card networks, stablecoins, and crypto — providing unified risk intelligence that rail-specific tools can't match.
+[MerchantGuard](https://merchantguard.ai) is the privacy-preserving fraud scoring platform for high-risk and agentic commerce. Our patented cross-rail fraud detection technology scores transactions across card networks, stablecoins, and crypto — providing unified risk intelligence that rail-specific tools can't match.
 
 **Patent Portfolio:** Cross-Lingual BFT Paradox scoring, Multi-Agent AI Security, and GuardScore risk engine.
 
 **Member:** [Agentic AI Foundation (AAIF)](https://aaif.io) by the Linux Foundation.
+
+**Privacy-Preserving Architecture:** OPRF behavioral fingerprinting (RFC 9497), soulbound agent credentials, zero-knowledge trust verification. Agents prove compliance without exposing internals.
 
 ## License
 

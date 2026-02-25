@@ -24,7 +24,12 @@
     "chargeback-prevention",
     "vamp",
     "payment-security",
-    "ai-agents"
+    "ai-agents",
+    "privacy-preserving",
+    "zero-knowledge",
+    "agent-verification",
+    "oprf",
+    "soulbound"
   ],
   "author": "MerchantGuard <ops@merchantguard.ai>",
   "license": "MIT",
